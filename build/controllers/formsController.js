@@ -15,7 +15,7 @@ const database_1 = __importDefault(require("../database"));
 class FormController {
     create(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
-            yield database_1.default.query('INSERT INTO escribenos set ?', [req.body]);
+            yield database_1.default.query('INSERT INTO comentarios_oraciones set ?', [req.body]);
             res.json({ message: 'Formulario enviado' });
         });
     }
